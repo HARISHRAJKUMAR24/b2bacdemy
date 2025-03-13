@@ -112,11 +112,12 @@ h6,
 .btn.btn-primary {
     border: 0;
     color: var(--bs-white);
+    background-color: var(--bs-primary);
 }
 
 .btn.btn-primary:hover {
     background: var(--bs-secondary);
-    color: var(--bs-primary);
+    color: var(--bs-primary) !important;
 }
 
 .btn-border-radius {
@@ -167,7 +168,9 @@ h6,
 .navbar {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
-
+.navbar img{
+    width: 70px;
+}
 .navbar .navbar-nav .nav-link {
     padding: 10px 12px;
     font-size: 16px;
@@ -192,17 +195,8 @@ h6,
 }
 
 @media (min-width: 1200px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        visibility: hidden;
-        top: 100%;
-        font-weight: 400;
-        font-family: 'Fredoka', sans-serif;
-        transform: rotateX(-75deg);
-        transform-origin: 0% 0%;
-        border: 0;
-        transition: .5s;
-        opacity: 0;
+    .navbar img{
+        width: 70px;
     }
 }
 
@@ -229,7 +223,7 @@ h6,
 /*** Hero Header ***/
 .hero-header,
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(../img/hero-img.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(../img/header.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -370,7 +364,7 @@ h6,
 
 /*** service Start ***/
 .service {
-    background: linear-gradient(rgba(255, 72, 128, 0.05), rgba(255, 72, 128, 0.2));
+    background-color: var(--bs-light);
 }
 
 .service .service-item {
@@ -439,7 +433,7 @@ h6,
 
 /*** Programs Start ***/
 .program {
-    background: linear-gradient(rgba(255, 72, 128, 0.1), rgba(255, 72, 128, 0.1));
+    background-color:  #ffcebf80;
 }
 
 .program .program-item .program-img .program-rate {
