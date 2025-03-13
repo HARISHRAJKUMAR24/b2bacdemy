@@ -168,8 +168,9 @@ h6,
 .navbar {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
+
 .navbar img{
-    width: 70px;
+    width: 60px;
 }
 .navbar .navbar-nav .nav-link {
     padding: 10px 12px;
@@ -194,11 +195,6 @@ h6,
     margin-left: 8px;
 }
 
-@media (min-width: 1200px) {
-    .navbar img{
-        width: 70px;
-    }
-}
 
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-secondary);
@@ -223,7 +219,7 @@ h6,
 /*** Hero Header ***/
 .hero-header,
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(../img/header.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.336)), url(../img/header.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

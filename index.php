@@ -42,45 +42,8 @@
 
 
     <!-- Navbar start -->
-    <div class="container-fluid border-bottom bg-light wow fadeIn" data-wow-delay="0.1s">
-        <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px">
-            <div class="d-flex justify-content-between">
-                <div class="top-info ps-2">
-                    <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
-                    <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
-                </div>
-                <div class="top-link pe-2">
-                    <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
-                    <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-twitter text-secondary"></i></a>
-                    <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
-                    <a href="" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-secondary"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="container px-0">
-            <nav class="navbar navbar-light navbar-expand-xl py-3">
-                <a href="index.php" class="navbar-brand">
-                    <img src="./img/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-primary"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto">
-                        <a href="index.php" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="program.html" class="nav-item nav-link">Programs</a>
-                        <a href="event.html" class="nav-item nav-link">Events</a>
 
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <button class="btn btn-primary btn-md-square rounded-circle fs-5"><i class="bi bi-person"></i></button>
-                </div>
-            </nav>
-        </div>
-    </div>
-
+    <?php include('./section/nav.php'); ?>
 
     <!-- Navbar End -->
 
@@ -90,7 +53,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Login Page Comes Here</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body d-flex align-items-center">
@@ -127,8 +90,14 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="video border">
-                        <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <button type="button" class="btn btn-play"
+                            data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/Hz9WdJqlRcI"
+                            data-bs-target="#videoModal">
                             <span></span>
+                        </button>
+
+                        <span></span>
                         </button>
                     </div>
                 </div>
