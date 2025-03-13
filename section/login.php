@@ -7,8 +7,8 @@
             </div>
 
             <div class="modal-body">
-                <div class="text-center mb-4">
-                    <button class="btn btn-primary me-2" id="btn-student-login">
+                <div class="d-flex justify-content-center gap-3 mb-4">
+                    <button class="btn btn-primary" id="btn-student-login">
                         <i class="fas fa-user-graduate me-2"></i> Student Login
                     </button>
                     <button class="btn btn-secondary" id="btn-staff-login">
