@@ -81,3 +81,24 @@
 
 })(jQuery);
 
+
+
+
+    document.getElementById("btn-student-login").addEventListener("click", function () {
+        document.getElementById("student-login").classList.remove("d-none");
+        document.getElementById("staff-login").classList.add("d-none");
+        this.classList.add("btn-primary");
+        this.classList.remove("btn-secondary");
+        document.getElementById("btn-staff-login").classList.add("btn-secondary");
+        document.getElementById("btn-staff-login").classList.remove("btn-primary");
+    });
+
+    document.getElementById("btn-staff-login").addEventListener("click", function () {
+        document.getElementById("staff-login").classList.remove("d-none");
+        document.getElementById("student-login").classList.add("d-none");
+        this.classList.add("btn-primary");
+        this.classList.remove("btn-secondary");
+        document.getElementById("btn-student-login").classList.add("btn-secondary");
+        document.getElementById("btn-student-login").classList.remove("btn-primary");
+    });
+

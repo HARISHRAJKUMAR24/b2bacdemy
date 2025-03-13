@@ -42,96 +42,26 @@
 
 
         <!-- Navbar start -->
-        <div class="container-fluid border-bottom bg-light wow fadeIn" data-wow-delay="0.1s">
-            <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px">
-                <div class="d-flex justify-content-between">
-                    <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
-                    </div>
-                    <div class="top-link pe-2">
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-twitter text-secondary"></i></a>
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
-                        <a href="" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-secondary"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-0">
-                <nav class="navbar navbar-light navbar-expand-xl py-3">
-                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Baby<span class="text-secondary">Care</span></h1></a>
-                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars text-primary"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav mx-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link active">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="program.html" class="nav-item nav-link">Programs</a>
-                            <a href="event.html" class="nav-item nav-link">Events</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                    <a href="team.html" class="dropdown-item">Our Team</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <div class="d-flex me-4">
-                            <div id="phone-tada" class="d-flex align-items-center justify-content-center">
-                                <a href="" class="position-relative wow tada" data-wow-delay=".9s" >
-                                    <i class="fa fa-phone-alt text-primary fa-2x me-4"></i>
-                                    <div class="position-absolute" style="top: -7px; left: 20px;">
-                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column pe-3 border-end border-primary">
-                                <span class="text-primary">Have any questions?</span>
-                                <a href="#"><span class="text-secondary">Free: + 0123 456 7890</span></a>
-                            </div>
-                        </div>
-                        <button class="btn-search btn btn-primary btn-md-square rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-white"></i></button>
-                    </div>
-                </nav>
-            </div>
-        </div>
+        <?php include('./section/nav.php'); ?>
         <!-- Navbar End -->
 
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Search End -->
+    <!-- Login Page -->
+
+    <?php include('./section/login.php') ?>
+
+    <!-- Login Page End -->
 
         
         <!-- Page Header Start -->
         <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4">About Us</h1>
+                <h1 class="display-2 text-white mb-4">Contact Us</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center mb-0">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white" aria-current="page">About Us</li>
+                        <li class="breadcrumb-item text-white" aria-current="page">Contact Us</li>
                     </ol>
                 </nav>
             </div>
@@ -139,58 +69,64 @@
         <!-- Page Header End -->
 
 
-        <!-- About Start -->
-        <div class="container-fluid py-5 about bg-light">
+        <!-- Contact Start -->
+        <div class="container-fluid py-5">
             <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="video border">
-                            <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                                <span></span>
-                            </button>
+                <div class="p-5 bg-light rounded">
+                    <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Contact Us</h4>
+                        <h1 class="display-3">Contact For Any Query</h1>
+                        <p class="mb-5">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                    </div>
+                    <div class="row g-5 mb-5">
+                        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex w-100 border border-primary p-4 rounded bg-white">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                <div class="">
+                                    <h4>Address</h4>
+                                    <p class="mb-2">104 North tower New York, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex w-100 border border-primary p-4 rounded bg-white">
+                                <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                <div class="">
+                                    <h4>Mail Us</h4>
+                                    <p class="mb-2">info@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="d-flex w-100 border border-primary p-4 rounded bg-white">
+                                <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                <div class="">
+                                    <h4>Telephone</h4>
+                                    <p class="mb-2">(+012) 3456 7890 123</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
-                        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">About Us</h4>
-                        <h1 class="text-dark mb-4 display-5">We Learn Smart Way To Build Bright Futute For Your Children</h1>
-                        <p class="text-dark mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                        </p>
-                        <div class="row mb-4">
-                            <div class="col-lg-6">
-                                <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Sport Activites</h6>
-                                <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Outdoor Games</h6>
-                                <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Nutritious Foods</h6>
-                            </div>
-                            <div class="col-lg-6">
-                                <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Highly Secured</h6>
-                                <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Friendly Environment</h6>
-                                <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Qualified Teacher</h6>
+                    <div class="row g-5">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                            <form action="">
+                                <input type="text" class="w-100 form-control py-3 mb-5 border-primary" placeholder="Your Name">
+                                <input type="email" class="w-100 form-control py-3 mb-5 border-primary" placeholder="Enter Your Email">
+                                <textarea class="w-100 form-control mb-5 border-primary" rows="8" cols="10" placeholder="Your Message"></textarea>
+                                <button class="w-100 btn btn-primary form-control py-3 border-primary text-white bg-primary" type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="border border-primary h-100 rounded">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0360649959!2d-74.3093289654168!3d40.69753996411732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1691911295047!5m2!1sen!2sbd" 
+                                class="w-100 h-100 rounded" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary px-5 py-3 btn-border-radius">More Details</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Video -->
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- 16:9 aspect ratio -->
-                        <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                allow="autoplay"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
+        <!-- Contact End -->
 
 
         <!-- Footer Start -->

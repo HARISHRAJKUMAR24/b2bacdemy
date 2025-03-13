@@ -29,7 +29,14 @@
     <link href="css/style.css" rel="stylesheet">
 
 
-
+    <style>
+        .modal-backdrop {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            /* More intense white */
+            backdrop-filter: blur(10px);
+            /* Increase blur for enhanced effect */
+        }
+    </style>
 </head>
 
 <body>
@@ -48,24 +55,11 @@
     <!-- Navbar End -->
 
 
-    <!-- Modal Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Login Page Comes Here</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center">
-                    <div class="input-group w-75 mx-auto d-flex">
-                        <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Search End -->
+    <!-- Login Page -->
+
+    <?php include('./section/login.php') ?>
+
+    <!-- Login Page End -->
 
 
     <!-- Hero Start -->
@@ -106,18 +100,7 @@
                     <h1 class="text-dark mb-4 display-5">We Learn Smart Way To Build Bright Futute For Your Children</h1>
                     <p class="text-dark mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
-                    <div class="row mb-4">
-                        <div class="col-lg-6">
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Sport Activites</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Outdoor Games</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Nutritious Foods</h6>
-                        </div>
-                        <div class="col-lg-6">
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Highly Secured</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Friendly Environment</h6>
-                            <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Qualified Teacher</h6>
-                        </div>
-                    </div>
+
                     <a href="" class="btn btn-primary px-5 py-3 btn-border-radius">More Details</a>
                 </div>
             </div>
@@ -310,6 +293,124 @@
     </div>
     <!-- Program End -->
 
+    <div class="container-fluid py-5 about bg-light">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Why Choose Us?</h4>
+                    <h1 class="text-dark mb-4 display-5">Empowering Students with Knowledge and Skills for a Bright Future</h1>
+                    <p class="text-dark mb-4">Our academy stands out for its dedicated faculty, modern teaching methods, and focus on nurturing students' overall growth. We provide a balanced environment for academics and extracurricular activities.</p>
+                    <div class="row mb-4">
+                        <div class="col-lg-6">
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Innovative Learning</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Interactive Classrooms</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Personalized Guidance</h6>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Career Counseling</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Engaging Projects</h6>
+                            <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Dedicated Faculty</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-image border img-border-radius overflow-hidden">
+                        <img src="./img/about.jpg" class="img-fluid w-100" alt="About Our Academy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Testimonials</h4>
+                <h1 class="mb-5 display-3">Parents Say About Us</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
+                <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
+                    <div class="p-4 position-relative">
+                        <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
+                        <div class="d-flex align-items-center">
+                            <div class="border border-primary bg-white rounded-circle">
+                                <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="text-dark">Client Name</h4>
+                                <p class="m-0 pb-3">Profession</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-top border-primary mt-4 pt-3">
+                            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
+                    <div class="p-4 position-relative">
+                        <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
+                        <div class="d-flex align-items-center">
+                            <div class="border border-primary bg-white rounded-circle">
+                                <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="text-dark">Client Name</h4>
+                                <p class="m-0 pb-3">Profession</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-top border-primary mt-4 pt-3">
+                            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
+                    <div class="p-4 position-relative">
+                        <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
+                        <div class="d-flex align-items-center">
+                            <div class="border border-primary bg-white rounded-circle">
+                                <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="text-dark">Client Name</h4>
+                                <p class="m-0 pb-3">Profession</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-top border-primary mt-4 pt-3">
+                            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
 
     <!-- Events Start -->
     <div class="container-fluid events py-5 bg-light">
@@ -387,6 +488,43 @@
     </div>
     <!-- Events End-->
 
+    <!-- Our Gallery Start-->
+    <div class="container-fluid gallery py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Gallery</h4>
+                <h1 class="mb-5 display-3">Memorable Moments at Our Academy</h1>
+            </div>
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="gallery-item border border-primary img-border-radius overflow-hidden">
+                        <img src="./img/galary-1.jpg" class="img-fluid w-100" alt="Academy Event 1">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="gallery-item border border-primary img-border-radius overflow-hidden">
+                        <img src="./img/galary-2.jpg" class="img-fluid w-100" alt="Academy Event 2">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="gallery-item border border-primary img-border-radius overflow-hidden">
+                        <img src="./img/galary-3.jpg" class="img-fluid w-100" alt="Academy Event 3">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="gallery-item border border-primary img-border-radius overflow-hidden">
+                        <img src="./img/galary-4.jpg" class="img-fluid w-100" alt="Academy Event 4">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 wow fadeIn" data-wow-delay="0.9s">
+                <a href="" class="btn btn-primary px-5 py-3 btn-border-radius">More Details</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Our Gallery End-->
 
     <!-- Blog Start-->
     <div class="container-fluid blog py-5">
@@ -562,184 +700,8 @@
     </div>
     <!-- Team End-->
 
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid testimonial py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Testimonials</h4>
-                <h1 class="mb-5 display-3">Parents Say About Us</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
-                <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
-                    <div class="p-4 position-relative">
-                        <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                        <div class="d-flex align-items-center">
-                            <div class="border border-primary bg-white rounded-circle">
-                                <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-dark">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top border-primary mt-4 pt-3">
-                            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
-                    <div class="p-4 position-relative">
-                        <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                        <div class="d-flex align-items-center">
-                            <div class="border border-primary bg-white rounded-circle">
-                                <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-dark">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top border-primary mt-4 pt-3">
-                            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
-                    <div class="p-4 position-relative">
-                        <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                        <div class="d-flex align-items-center">
-                            <div class="border border-primary bg-white rounded-circle">
-                                <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-dark">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top border-primary mt-4 pt-3">
-                            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
     <!-- Footer Start -->
-    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="footer-item">
-                        <h2 class="fw-bold mb-3"><span class="text-primary mb-0">Baby</span><span class="text-secondary">Care</span></h2>
-                        <p class="mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
-                        <div class="border border-primary p-3 rounded bg-light">
-                            <h5 class="mb-3">Newsletter</h5>
-                            <div class="position-relative mx-auto border border-primary rounded" style="max-width: 400px;">
-                                <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2 text-white">SignUp</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="footer-item">
-                        <div class="d-flex flex-column p-4 ps-5 text-dark border border-primary"
-                            style="border-radius: 50% 20% / 10% 40%;">
-                            <p>Monday: 8am to 5pm</p>
-                            <p>Tuesday: 8am to 5pm</p>
-                            <p>Wednes: 8am to 5pm</p>
-                            <p>Thursday: 8am to 5pm</p>
-                            <p>Friday: 8am to 5pm</p>
-                            <p>Saturday: 8am to 5pm</p>
-                            <p class="mb-0">Sunday: Closed</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="footer-item">
-                        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">LOCATION</h4>
-                        <div class="d-flex flex-column align-items-start">
-                            <a href="" class="text-body mb-4"><i class="fa fa-map-marker-alt text-primary me-2"></i> 104 North tower New York, USA</a>
-                            <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</a>
-                            <a href="" class="text-start rounded-0 text-body mb-4"><i class="fas fa-envelope text-primary me-2"></i> exampleemail@gmail.com</a>
-                            <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</a>
-                            <div class="footer-icon d-flex">
-                                <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="btn btn-primary btn-sm-square me-3 rounded-circle text-white"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="btn btn-primary btn-sm-square rounded-circle text-white"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="footer-item">
-                        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">OUR GALLARY</h4>
-                        <div class="row g-3">
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-2.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-3.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-4.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-5.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-6.jpg" class="img-fluid rounded-circle p-2" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include('./section/footer.php') ?>
     <!-- Footer End -->
 
 
