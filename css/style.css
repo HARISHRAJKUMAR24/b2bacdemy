@@ -370,9 +370,6 @@ h6,
 
 
 /*** service Start ***/
-.service {
-    background-color: var(--bs-light);
-}
 
 .service .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .1);

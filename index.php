@@ -106,6 +106,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- Modal Video -->
     <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -194,7 +196,7 @@
 
 
     <!-- Programs Start -->
-    <div class="container-fluid program  py-5">
+    <div class="container-fluid program py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Programs</h4>
@@ -293,6 +295,8 @@
     </div>
     <!-- Program End -->
 
+
+    <!--Why Choose Us?-->
     <div class="container-fluid py-5 about bg-light">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
@@ -321,6 +325,26 @@
             </div>
         </div>
     </div>
+    <!--Why Choose Us End?-->
+
+    <!--Hand Writting Change Proof-->
+    <div class="container-fluid proof-section py-5 bg-light">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Success Story</h4>
+                <h1 class="mb-5 display-3">Remarkable Achievement!</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-image border img-border-radius overflow-hidden">
+                        <img src="./img/event-3.jpg" class="img-fluid w-100" alt="Student 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Hand Writting Change Proof End-->
+
 
 
     <!-- Testimonial Start -->
@@ -488,8 +512,37 @@
     </div>
     <!-- Events End-->
 
+    <!-- Certificate -->
+    <div class="container-fluid certificate-section py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Certificate of Appreciation</h4>
+                <h1 class="mb-5 display-3">We Recognize Every Achievement!</h1>
+                <p class="text-muted">Celebrating the dedication and success of our students through events, competitions, and skill development programs.</p>
+            </div>
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="image-container border border-primary img-border-radius overflow-hidden">
+                        <img src="./img/program-1.jpg" class="img-fluid w-100" alt="Event Certificate">
+                    </div>
+                    <h4 class="text-primary text-center mt-3">Spoken English Workshop</h4>
+                    <p class="text-muted text-center">Successfully conducted with enthusiastic student participation</p>
+                </div>
+                <div class="col-md-6 col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="image-container border border-primary img-border-radius overflow-hidden">
+                        <img src="./img/program-2.jpg" class="img-fluid w-100" alt="Event Certificate">
+                    </div>
+                    <h4 class="text-primary text-center mt-3">Cybersecurity Awareness Camp</h4>
+                    <p class="text-muted text-center">Empowering students with safety skills online</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Certificate End -->
+
+
     <!-- Our Gallery Start-->
-    <div class="container-fluid gallery py-5">
+    <div class="container-fluid gallery bg-light py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Gallery</h4>
@@ -522,8 +575,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Our Gallery End-->
 
     <!-- Blog Start-->
@@ -703,25 +754,6 @@
     <!-- Footer Start -->
     <?php include('./section/footer.php') ?>
     <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
-                </div>
-                <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a clas="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
 
 
     <!-- Back to Top -->

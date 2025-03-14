@@ -29,16 +29,16 @@
     <link href="css/style.css" rel="stylesheet">
 
     <script>
-    document.getElementById("btn-student-login").addEventListener("click", function () {
-        document.getElementById("student-login").classList.remove("d-none");
-        document.getElementById("staff-login").classList.add("d-none");
-    });
+        document.getElementById("btn-student-login").addEventListener("click", function() {
+            document.getElementById("student-login").classList.remove("d-none");
+            document.getElementById("staff-login").classList.add("d-none");
+        });
 
-    document.getElementById("btn-staff-login").addEventListener("click", function () {
-        document.getElementById("staff-login").classList.remove("d-none");
-        document.getElementById("student-login").classList.add("d-none");
-    });
-</script>
+        document.getElementById("btn-staff-login").addEventListener("click", function() {
+            document.getElementById("staff-login").classList.remove("d-none");
+            document.getElementById("student-login").classList.add("d-none");
+        });
+    </script>
 
 
 </head>
@@ -60,44 +60,44 @@
 
 
     <!-- Modal Search Start -->
-    
-</button>
 
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-            <div class="modal-header">
-                <h5 class="modal-title" id="loginModalLabel">Login Page</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+    </button>
 
-            <div class="modal-body">
-                <div class="text-center mb-4">
-                    <button class="btn btn-primary me-2" id="btn-student-login">Student Login</button>
-                    <button class="btn btn-secondary" id="btn-staff-login">Staff Login</button>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login Page</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <!-- Student Login Form -->
-                <div id="student-login" class="d-block">
-                    <div class="input-group w-50 mx-auto">
-                        <input type="text" class="form-control p-3" placeholder="Student ID">
-                        <input type="password" class="form-control p-3 mt-3" placeholder="Password">
-                        <button class="btn btn-primary w-100 mt-3">Login</button>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <button class="btn btn-primary me-2" id="btn-student-login">Student Login</button>
+                        <button class="btn btn-secondary" id="btn-staff-login">Staff Login</button>
                     </div>
-                </div>
 
-                <!-- Staff Login Form -->
-                <div id="staff-login" class="d-none">
-                    <div class="input-group w-50 mx-auto">
-                        <input type="text" class="form-control p-3" placeholder="Username">
-                        <input type="password" class="form-control p-3 mt-3" placeholder="Password">
-                        <button class="btn btn-secondary w-100 mt-3">Login</button>
+                    <!-- Student Login Form -->
+                    <div id="student-login" class="d-block">
+                        <div class="input-group w-50 mx-auto">
+                            <input type="text" class="form-control p-3" placeholder="Student ID">
+                            <input type="password" class="form-control p-3 mt-3" placeholder="Password">
+                            <button class="btn btn-primary w-100 mt-3">Login</button>
+                        </div>
+                    </div>
+
+                    <!-- Staff Login Form -->
+                    <div id="staff-login" class="d-none">
+                        <div class="input-group w-50 mx-auto">
+                            <input type="text" class="form-control p-3" placeholder="Username">
+                            <input type="password" class="form-control p-3 mt-3" placeholder="Password">
+                            <button class="btn btn-secondary w-100 mt-3">Login</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
