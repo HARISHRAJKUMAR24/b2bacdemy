@@ -64,6 +64,6 @@
 
 <div class="container-fluid copyright bg-dark py-4">
     <div class="container text-center text-white">
-        <span>© 2025 <a href="#">B<span style="font-size: 12px;">2</span>B Academy</a>. All Rights Reserved.</span>
+        <span>© 2025 <a href="#">B<span class="b2b_academy_name_fot">2</span>B Academy</a>. All Rights Reserved.</span>
     </div>
 </div>

@@ -68,28 +68,24 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="video border">
-                        <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <button type="button" class="btn btn-play"
+                            data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/Hz9WdJqlRcI"
+                            data-bs-target="#videoModal">
                             <span></span>
+                        </button>
+
+                        <span></span>
                         </button>
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">About Us</h4>
-                    <h1 class="text-dark mb-4 display-5">We Learn Smart Way To Build Bright Futute For Your Children</h1>
-                    <p class="text-dark mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    <h1 class="text-dark mb-4 display-5">Welcome to B<span class="b2b_academy_name_heading">2</span>B Academy Shaping Young Minds for a Brighter Future</h1>
+                    <p class="text-dark mb-2">Your Child Deserves the Best Start
+                    Empowering students for over 9 years, B2B Academy has proudly guided more than 500+ students to academic success and personal growth. Our experienced educators are dedicated to nurturing confident, well-rounded achievers by blending strong academics with essential life skills and values. At B2B Academy, we believe every child deserves the best start — a journey of knowledge, confidence, and lasting success. Join the B2B Academy family and watch your child thrive!
                     </p>
-                    <div class="row mb-4">
-                        <div class="col-lg-6">
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Sport Activites</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Outdoor Games</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Nutritious Foods</h6>
-                        </div>
-                        <div class="col-lg-6">
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Highly Secured</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Friendly Environment</h6>
-                            <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Qualified Teacher</h6>
-                        </div>
-                    </div>
+                    <p class="text-dark mb-4">Join the B2B Academy Family Today!</p>
                 </div>
             </div>
         </div>
@@ -121,7 +117,7 @@
                 <div class="col-lg-6 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Story</h4>
                     <h1 class="text-dark mb-4 display-5">Empowering Students for a Brighter Future</h1>
-                    <p>Our academy started with a vision to provide quality education and holistic development for every student...</p>
+                    <p>B2B Academy was founded by passionate educators <span class="bg_style">Mr. Muthu Kumaran</span> & <span class="bg_style">Ms. Ruby</span> with a vision to empower students through knowledge, discipline, and life skills. With over 9 years of dedicated service, we have guided 500+ students to achieve academic excellence and personal growth.</p>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-image border img-border-radius overflow-hidden">
@@ -136,91 +132,60 @@
 
     <!-- Why Choose Us Section -->
     <div class="container-fluid py-5 bg-light">
-        <div class="container py-5">
-            <div class="text-center wow fadeIn" data-wow-delay="0.1s">
-                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Why Choose Us?</h4>
-                <h1 class="mb-5 display-4">Your Child's Future Begins Here</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="p-4 border rounded bg-white text-center">
-                        <i class="fas fa-chalkboard-teacher fa-3x text-primary mb-3"></i>
-                        <h5>Experienced Teachers</h5>
-                        <p>Our dedicated educators bring years of experience and passion to nurture every child's potential.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="p-4 border rounded bg-white text-center">
-                        <i class="fas fa-user-graduate fa-3x text-secondary mb-3"></i>
-                        <h5>Proven Success Rates</h5>
-                        <p>We pride ourselves on producing top achievers with excellent academic performance.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-4 border rounded bg-white text-center">
-                        <i class="fas fa-child fa-3x text-primary mb-3"></i>
-                        <h5>Personalized Learning Plans</h5>
-                        <p>Tailored study methods to match individual learning styles for better results.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="p-4 border rounded bg-white text-center">
-                        <i class="fas fa-shield-alt fa-3x text-secondary mb-3"></i>
-                        <h5>Safe Learning Environment</h5>
-                        <p>Our secure campus ensures your child's well-being and comfort at all times.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.9s">
-                    <div class="p-4 border rounded bg-white text-center">
-                        <i class="fas fa-medal fa-3x text-primary mb-3"></i>
-                        <h5>Outstanding Achievements</h5>
-                        <p>Our students regularly win competitions, awards, and academic distinctions.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="1.1s">
-                    <div class="p-4 border rounded bg-white text-center">
-                        <i class="fas fa-comments fa-3x text-secondary mb-3"></i>
-                        <h5>Strong Parent Communication</h5>
-                        <p>We provide regular updates on your child's progress to keep you informed.</p>
-                    </div>
+    <div class="container py-5">
+        <div class="text-center wow fadeIn" data-wow-delay="0.1s">
+            <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Why Choose Us?</h4>
+            <h1 class="mb-5 display-4">Your Child's Future Begins Here</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="p-4 border rounded bg-white text-center">
+                    <i class="fas fa-award fa-3x text-primary mb-3"></i>
+                    <h5>Discipline First, Success Follows</h5>
+                    <p>We teach values like punctuality, responsibility, and respect — building strong character in every student.</p>
                 </div>
             </div>
-            <div class="text-center mt-5 wow fadeIn" data-wow-delay="0.3s">
-                <a href="/contact" class="btn btn-primary px-5 py-3 btn-border-radius">Get a Free Demo Class</a>
+            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="p-4 border rounded bg-white text-center">
+                    <i class="fas fa-brain fa-3x text-secondary mb-3"></i>
+                    <h5>Learning Made Simple</h5>
+                    <p>Our small-batch teaching method ensures students get personal attention, making complex subjects easier to understand.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="p-4 border rounded bg-white text-center">
+                    <i class="fas fa-chalkboard-teacher fa-3x text-primary mb-3"></i>
+                    <h5>Guided by Experts</h5>
+                    <p>Our experienced educators inspire curiosity and confidence, delivering insightful lessons that leave a lasting impact.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                <div class="p-4 border rounded bg-white text-center">
+                    <i class="fas fa-graduation-cap fa-3x text-secondary mb-3"></i>
+                    <h5>Proven Results Every Year</h5>
+                    <p>With a 100% success record, we consistently help students achieve outstanding academic performance.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.9s">
+                <div class="p-4 border rounded bg-white text-center">
+                    <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                    <h5>Confidence Beyond Books</h5>
+                    <p>We ignite creativity, leadership, and communication skills to prepare students for life’s challenges.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="1.1s">
+                <div class="p-4 border rounded bg-white text-center">
+                    <i class="fas fa-handshake fa-3x text-secondary mb-3"></i>
+                    <h5>Empowering Bright Futures</h5>
+                    <p>Our nurturing environment helps students discover their strengths and reach their fullest potential.</p>
+                </div>
             </div>
         </div>
+        <div class="text-center mt-5 wow fadeIn" data-wow-delay="0.3s">
+            <a href="/contact" class="btn btn-primary px-5 py-3 btn-border-radius">Get a Free Demo Class</a>
+        </div>
     </div>
-
-
-    <!-- Meet Our Team Section 
-        <div class="row g-5 align-items-center mt-5">
-            <div class="col-12 text-center wow fadeIn" data-wow-delay="0.1s">
-                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Meet Our Team</h4>
-            </div>
-            <div class="col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
-                <img src="img/team-1.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Teacher 1">
-                <h5>John Doe</h5>
-                <p>Mathematics Expert</p>
-            </div>
-            <div class="col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
-                <img src="img/team-2.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Teacher 2">
-                <h5>Jane Smith</h5>
-                <p>Science Specialist</p>
-            </div>
-            <div class="col-lg-4 text-center wow fadeIn" data-wow-delay="0.5s">
-                <img src="img/team-3.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Teacher 3">
-                <h5>Michael Brown</h5>
-                <p>English Language Coach</p>
-            </div>
-        </div>-->
-
-    <!-- Success Stories Section -->
-    <div class="text-center mt-5  wow fadeIn" data-wow-delay="0.1s">
-        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Success Stories</h4>
-        <p>Our students have achieved outstanding results, earning scholarships, excelling in competitions, and securing top scores in board exams.</p>
-    </div>
-
-
+</div>
 
     <!-- Footer Start -->
     <?php include('./section/footer.php') ?>

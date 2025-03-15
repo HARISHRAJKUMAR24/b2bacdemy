@@ -66,8 +66,8 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-7 col-md-12">
-                    <h1 class="mb-3 text-primary">We Care Your Baby</h1>
-                    <h1 class="mb-5 display-1 text-white">The Best Play Area For Your Kids</h1>
+                    <h2 class="mb-3 text-primary heads">The Right Education, The Right Values </h2>
+                    <h1 class="mb-5 display-1 text-white"> The Academy That Transforms Futures</h1>
                     <a href="" class="btn btn-primary px-4 py-3 px-md-5  me-4 btn-border-radius">Get Started</a>
                     <a href="" class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius">Learn More</a>
                 </div>
@@ -96,9 +96,11 @@
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">About Us</h4>
-                    <h1 class="text-dark mb-4 display-5">We Learn Smart Way To Build Bright Futute For Your Children</h1>
-                    <p class="text-dark mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    <h1 class="text-dark mb-4 display-5">Welcome to B<span class="b2b_academy_name_heading">2</span>B Academy Shaping Young Minds for a Brighter Future</h1>
+                    <p class="text-dark mb-2">Your Child Deserves the Best Start
+                        At B2B Academy, we partner with parents to create a personalized learning experience that unlocks every child's potential. Watch your child grow with confidence, knowledge, and skills that last a lifetime.
                     </p>
+                    <p class="text-dark mb-4">Join the B2B Academy Family Today!</p>
 
                     <a href="" class="btn btn-primary px-5 py-3 btn-border-radius">More Details</a>
                 </div>
@@ -133,17 +135,16 @@
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">What We Do</h4>
-                <h1 class="mb-5 display-3">Thanks To Get Started With Our School</h1>
+                <h1 class="mb-5 display-3">Giving Your Child the Edge to Succeed</h1>
             </div>
             <div class="row g-5">
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
                     <div class="text-center border-primary border bg-white service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-gamepad fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">Study & Game</a>
-                                <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa qui officiis animi Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit.</p>
+                                <div class="p-4"><i class="fas fa-award fa-6x text-primary"></i></div>
+                                <a href="#" class="h4">Instilling Discipline <br>& Confidence</a>
+                                <p class="my-3">We nurture key values like discipline, punctuality, and responsibility, shaping students into future-ready achievers.</p>
                                 <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a>
                             </div>
                         </div>
@@ -153,10 +154,9 @@
                     <div class="text-center border-primary border bg-white service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-sort-alpha-down fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">A to Z Programs</a>
-                                <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa qui officiis animi Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit.</p>
+                                <div class="p-4"><i class="fas fa-bullseye fa-6x text-primary"></i></div>
+                                <a href="#" class="h4">Focused Learning for Better Results</a>
+                                <p class="my-3">Our structured, small-batch teaching approach ensures focused attention, making learning easy and effective for every student.</p>
                                 <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a>
                             </div>
                         </div>
@@ -166,10 +166,9 @@
                     <div class="text-center border-primary border bg-white service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-users fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">Expert Teacher</a>
-                                <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa qui officiis animi Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit.</p>
+                                <div class="p-4"><i class="fas fa-book-reader fa-6x text-primary"></i></div>
+                                <a href="#" class="h4">Expert Teachers, Exceptional Learning</a>
+                                <p class="my-3">With highly experienced teachers, we provide a learning experience that is engaging, insightful, and impactful.</p>
                                 <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a>
                             </div>
                         </div>
@@ -179,10 +178,9 @@
                     <div class="text-center border-primary border bg-white service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-user-nurse fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">Mental Health</a>
-                                <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa qui officiis animi Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit.</p>
+                                <div class="p-4"><i class="fas fa-graduation-cap fa-6x text-primary"></i></div>
+                                <a href="#" class="h4">Proven Success with Top Results</a>
+                                <p class="my-3">Our commitment to excellence guarantees 100% results, helping students achieve top scores and academic success.</p>
                                 <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a>
                             </div>
                         </div>
@@ -302,18 +300,18 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Why Choose Us?</h4>
-                    <h1 class="text-dark mb-4 display-5">Empowering Students with Knowledge and Skills for a Bright Future</h1>
-                    <p class="text-dark mb-4">Our academy stands out for its dedicated faculty, modern teaching methods, and focus on nurturing students' overall growth. We provide a balanced environment for academics and extracurricular activities.</p>
+                    <h1 class="text-dark mb-4 display-5">The Right Choice for Your Child’s Success</h1>
+                    <p class="text-dark mb-4">Every parent wants the best for their child. At B2B Academy, we don’t just teach; we inspire, empower, and transform students into confident achievers. With our specialized courses, expert faculty, and proven results, your child is set for success!</p>
                     <div class="row mb-4">
                         <div class="col-lg-6">
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Innovative Learning</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Interactive Classrooms</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Personalized Guidance</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Best Hindi Coaching</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Elite Calligraphy Training</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Fluent English Mastery</h6>
                         </div>
                         <div class="col-lg-6">
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Career Counseling</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Engaging Projects</h6>
-                            <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Dedicated Faculty</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>No.1 LSRW Program</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Top Academic Results</h6>
+                            <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Essential Life Skills</h6>
                         </div>
                     </div>
                 </div>
@@ -328,22 +326,41 @@
     <!------------------ Why Choose Us? End ------------------>
 
 
+
+
+
     <!------------------ Hand Writting Change Proof Start ------------------>
+    <!-- Image Popup Overlay -->
+    <div id="imagePopup" class="popup-overlay" onclick="closePopup()">
+        <div class="popup-content-wrapper">
+            <span class="close-btn" onclick="closePopup(event)">&times;</span>
+            <img id="popupImage" class="popup-content" src="" alt="Popup Image">
+        </div>
+    </div>
+
+
     <div class="container-fluid proof-section py-5 bg-light">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Success Story</h4>
                 <h1 class="mb-5 display-3">Remarkable Achievement!</h1>
             </div>
-            <div class="d-flex justify-content-center">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-image border img-border-radius overflow-hidden">
-                        <img src="./img/event-3.jpg" class="img-fluid w-100" alt="Student 1">
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-image border img-border-radius overflow-hidden" onclick="openPopup('./img/hand-writting_proof-1.jpg')">
+                        <img src="./img/hand-writting_proof-1.jpg" class="img-fluid w-100" alt="Student 1">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-image border img-border-radius overflow-hidden" onclick="openPopup('./img/hand-writting_proof-2.jpg')">
+                        <img src="./img/hand-writting_proof-2.jpg" class="img-fluid w-100" alt="Student 2">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!------------------ Hand Writting Change Proof End ------------------>
 
 
@@ -577,7 +594,7 @@
     </div>
     <!------------------ Our Gallery End ------------------>
 
-    <!------------------ Blog Start ------------------>
+    <!------------------ Blog Start ----------------
     <div class="container-fluid blog py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
@@ -675,7 +692,7 @@
             </div>
         </div>
     </div>
-    <!------------------ Blog End ------------------>
+   ---------------- Blog End ------------------>
 
 
     <!------------------ Footer Start ------------------>
