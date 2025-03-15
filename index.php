@@ -48,21 +48,20 @@
     <!-- Spinner End -->
 
 
-    <!-- Navbar start -->
+    <!------------------ Navbar start ------------------>
 
     <?php include('./section/nav.php'); ?>
 
-    <!-- Navbar End -->
+    <!------------------ Navbar End ------------------>
 
-
-    <!-- Login Page -->
+    <!------------------ Login Page ------------------>
 
     <?php include('./section/login.php') ?>
 
-    <!-- Login Page End -->
+    <!------------------ Login Page End------------------>
 
 
-    <!-- Hero Start -->
+    <!------------------ Header ------------------>
     <div class="container-fluid py-5 hero-header wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -75,10 +74,10 @@
             </div>
         </div>
     </div>
-    <!-- Hero End -->
+    <!------------------ Header End ------------------>
 
 
-    <!-- About Start -->
+    <!------------------ About Start ------------------>
     <div class="container-fluid py-5 about bg-light">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
@@ -108,7 +107,7 @@
     </div>
 
 
-    <!-- Modal Video -->
+    <!-- Modal Youtube Video -->
     <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
@@ -126,10 +125,10 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
+    <!------------------ About End ------------------>
 
 
-    <!-- Service Start -->
+    <!------------------ What We Do Best Start ------------------>
     <div class="container-fluid service py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
@@ -192,10 +191,10 @@
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!------------------ What We Do Best End------------------>
 
 
-    <!-- Programs Start -->
+    <!------------------ Classes Start ------------------>
     <div class="container-fluid program py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
@@ -293,10 +292,11 @@
             </div>
         </div>
     </div>
-    <!-- Program End -->
+    <!------------------ Classes End------------------>
 
 
-    <!--Why Choose Us?-->
+    <!------------------ Why Choose Us? Start ------------------>
+
     <div class="container-fluid py-5 about bg-light">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
@@ -325,9 +325,10 @@
             </div>
         </div>
     </div>
-    <!--Why Choose Us End?-->
+    <!------------------ Why Choose Us? End ------------------>
 
-    <!--Hand Writting Change Proof-->
+
+    <!------------------ Hand Writting Change Proof Start ------------------>
     <div class="container-fluid proof-section py-5 bg-light">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
@@ -343,11 +344,11 @@
             </div>
         </div>
     </div>
-    <!--Hand Writting Change Proof End-->
+    <!------------------ Hand Writting Change Proof End ------------------>
 
 
 
-    <!-- Testimonial Start -->
+    <!------------------ Testimonial Start ------------------>
     <div class="container-fluid testimonial py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
@@ -433,10 +434,10 @@
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!------------------ Testimonial End ------------------>
 
 
-    <!-- Events Start -->
+    <!------------------ Event Start ------------------>
     <div class="container-fluid events py-5 bg-light">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
@@ -510,9 +511,9 @@
             </div>
         </div>
     </div>
-    <!-- Events End-->
+    <!------------------ Event End ------------------>
 
-    <!-- Certificate -->
+    <!------------------ Certificate Section Start ------------------>
     <div class="container-fluid certificate-section py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
@@ -538,10 +539,9 @@
             </div>
         </div>
     </div>
-    <!-- Certificate End -->
+    <!------------------ Certificate Section End  ------------------>
 
-
-    <!-- Our Gallery Start-->
+    <!------------------ Our Gallery Start ------------------>
     <div class="container-fluid gallery bg-light py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
@@ -575,9 +575,9 @@
             </div>
         </div>
     </div>
-    <!-- Our Gallery End-->
+    <!------------------ Our Gallery End ------------------>
 
-    <!-- Blog Start-->
+    <!------------------ Blog Start ------------------>
     <div class="container-fluid blog py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
@@ -675,85 +675,12 @@
             </div>
         </div>
     </div>
-    <!-- Blog End-->
+    <!------------------ Blog End ------------------>
 
 
-    <!-- Team Start-->
-    <div class="container-fluid team py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Team</h4>
-                <h1 class="mb-5 display-3">Meet With Our Expert Teacher</h1>
-            </div>
-            <div class="row g-5 justify-content-center">
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="img/team-1.jpg" class="img-fluid w-100" alt="">
-                        <div class="team-icon d-flex align-items-center justify-content-center">
-                            <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="team-content text-center py-3">
-                            <h4 class="text-primary">Linda Carlson</h4>
-                            <p class="text-muted mb-2">English Teacher</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="img/team-2.jpg" class="img-fluid w-100" alt="">
-                        <div class="team-icon d-flex align-items-center justify-content-center">
-                            <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="team-content text-center py-3">
-                            <h4 class="text-primary">Linda Carlson</h4>
-                            <p class="text-muted mb-2">English Teacher</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="img/team-3.jpg" class="img-fluid w-100" alt="">
-                        <div class="team-icon d-flex align-items-center justify-content-center">
-                            <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="team-content text-center py-3">
-                            <h4 class="text-primary">Linda Carlson</h4>
-                            <p class="text-muted mb-2">English Teacher</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="img/team-4.jpg" class="img-fluid w-100" alt="">
-                        <div class="team-icon d-flex align-items-center justify-content-center">
-                            <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="team-content text-center py-3">
-                            <h4 class="text-primary">Linda Carlson</h4>
-                            <p class="text-muted mb-2">English Teacher</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End-->
-
-    <!-- Footer Start -->
+    <!------------------ Footer Start ------------------>
     <?php include('./section/footer.php') ?>
-    <!-- Footer End -->
+    <!------------------ Footer End ------------------>
 
 
     <!-- Back to Top -->
