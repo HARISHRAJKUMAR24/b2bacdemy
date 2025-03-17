@@ -118,10 +118,10 @@
             <div class="row g-5 align-items-center mt-5">
                 <div class="col-lg-7 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Language Club (Tamil, English, Hindi)</h4>
-                    <p><strong>Celebrate Multilingual Skills:</strong> Learn multiple languages while improving communication skills in a fun, interactive way.</p>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Language Fluency</h6>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Interactive Speaking Sessions</h6>
-                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Cultural Understanding</h6>
+                    <p><strong>Learn Languages with Fun & Games!</strong> Explore Tamil, English, and Hindi through exciting activities that make learning enjoyable</p>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Puzzle-Based Learning</h6>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Interactive Games & Activities</h6>
+                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Boosts Communication Skills</h6>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-image border img-border-radius overflow-hidden">
@@ -139,10 +139,10 @@
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Drawing</h4>
-                    <p><strong>Unleash Creativity Through Art:</strong> Learn drawing techniques to create stunning artwork.</p>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Pencil Sketching</h6>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Color Blending Techniques</h6>
-                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Creative Artwork</h6>
+                    <p><strong>Express Creativity with Every Stroke!</strong> Develop artistic talent and sharpen focus through creative drawing techniques.</p>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Step-by-Step Drawing Skills</h6>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Imagination Boosting Exercises</h6>
+                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Fun & Engaging Art Projects</h6>
                 </div>
             </div>
 
@@ -150,10 +150,10 @@
             <div class="row g-5 align-items-center mt-5">
                 <div class="col-lg-7 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Art & Craft</h4>
-                    <p><strong>Celebrate Multilingual Skills:</strong> Learn multiple languages while improving communication skills in a fun, interactive way.</p>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Language Fluency</h6>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Interactive Speaking Sessions</h6>
-                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Cultural Understanding</h6>
+                    <p><strong>50% Art, 100% Creativity!</strong> A perfect blend of drawing and craft to inspire creativity and hands-on skills.</p>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Creative Craft Projects</h6>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Imaginative Drawing Skills</h6>
+                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Fun-Filled Creative Sessions</h6>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-image border img-border-radius overflow-hidden">
@@ -172,10 +172,10 @@
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">LSRW</h4>
-                    <p><strong>Transform Writing into Art:</strong> Enhance handwriting skills while exploring artistic creativity.</p>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Letter Formation Techniques</h6>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Beautiful Handwriting</h6>
-                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Creative Writing Skills</h6>
+                    <p><strong>Master Communication with Confidence!</strong> Build strong Listening, Speaking, Reading, and Writing skills for success.</p>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Interactive Learning Methods</h6>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Focus on Language Fluency</h6>
+                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Boosts Confidence in Communication</h6>
                 </div>
             </div>
 
@@ -184,9 +184,9 @@
                 <div class="col-lg-7 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Vocal</h4>
                     <p><strong>Celebrate Multilingual Skills:</strong> Learn multiple languages while improving communication skills in a fun, interactive way.</p>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Language Fluency</h6>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Interactive Speaking Sessions</h6>
-                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Cultural Understanding</h6>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Melodic Training</h6>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Voice Modulation</h6>
+                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Rhythm Mastery</h6>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-image border img-border-radius overflow-hidden">
@@ -204,10 +204,11 @@
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Chees</h4>
-                    <p><strong>Unleash Creativity Through Art:</strong> Learn drawing techniques to create stunning artwork.</p>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Pencil Sketching</h6>
-                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Color Blending Techniques</h6>
-                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Creative Artwork</h6>
+                    <p><strong>Build Strategy, Focus & Patience</strong> Through chess, students develop critical thinking, problem-solving, and strategic planning skills.</p>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Smart Moves</h6>
+                    <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Brain-Boosting Challenges</h6>
+                    <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Winning Strategies
+                    </h6>
                 </div>
             </div>
 
