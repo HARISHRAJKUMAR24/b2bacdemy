@@ -67,7 +67,7 @@
         <div class="container py-5">
 
             <!-- Spoken English -->
-            <div class="row g-5 align-items-center">
+            <div class="row g-5 align-items-center" id="spe">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-image border img-border-radius overflow-hidden">
                         <img src="./img/about1.jpg" class="img-fluid w-100" alt="Spoken English">
@@ -83,7 +83,7 @@
             </div>
 
             <!-- Spoken/Written Hindi -->
-            <div class="row g-5 align-items-center mt-5">
+            <div class="row g-5 align-items-center mt-5" id="sph">
                 <div class="col-lg-7 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Spoken/Written Hindi</h4>
                     <p><strong>Master India's National Language:</strong> Build strong foundations in reading, writing, and speaking Hindi for improved communication skills.</p>
@@ -99,7 +99,7 @@
             </div>
 
             <!-- Calligraphy -->
-            <div class="row g-5 align-items-center mt-5">
+            <div class="row g-5 align-items-center mt-5" id="calg">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-image border img-border-radius overflow-hidden">
                         <img src="./img/about3.jpg" class="img-fluid w-100" alt="Calligraphy">
@@ -183,7 +183,7 @@
             <div class="row g-5 align-items-center mt-5">
                 <div class="col-lg-7 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Vocal</h4>
-                    <p><strong>Celebrate Multilingual Skills:</strong> Learn multiple languages while improving communication skills in a fun, interactive way.</p>
+                    <p><strong>Grace Your Voice with Melody:</strong> Experience soulful training in melody, voice modulation, and rhythmic flow for a captivating singing journey.</p>
                     <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Melodic Training</h6>
                     <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Voice Modulation</h6>
                     <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Rhythm Mastery</h6>
