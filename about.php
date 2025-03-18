@@ -83,9 +83,9 @@
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">About Us</h4>
                     <h1 class="text-dark mb-4 display-5">Welcome to B<span class="b2b_academy_name_heading">2</span>B Academy Shaping Young Minds for a Brighter Future</h1>
                     <p class="text-dark mb-2">Your Child Deserves the Best Start
-                    Empowering students for over 9 years, B2B Academy has proudly guided more than 500+ students to academic success and personal growth. Our experienced educators are dedicated to nurturing confident, well-rounded achievers by blending strong academics with essential life skills and values. At B2B Academy, we believe every child deserves the best start — a journey of knowledge, confidence, and lasting success. Join the B2B Academy family and watch your child thrive!
+                    Empowering students for over 9 years, B<span class="b2b_academy_name_para">2</span>B Academy has proudly guided more than 500+ students to academic success and personal growth. Our experienced educators are dedicated to nurturing confident, well-rounded achievers by blending strong academics with essential life skills and values. At B<span class="b2b_academy_name_para">2</span>B Academy, we believe every child deserves the best start — a journey of knowledge, confidence, and lasting success. 
                     </p>
-                    <p class="text-dark mb-4">Join the B2B Academy Family Today!</p>
+                    <p class="text-dark mb-4">Join the B<span class="b2b_academy_name_para">2</span>B Academy family and watch your child thrive!</p>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
                 <div class="col-lg-6 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Story</h4>
                     <h1 class="text-dark mb-4 display-5">Empowering Students for a Brighter Future</h1>
-                    <p>B2B Academy was founded by passionate educators <span class="bg_style">Mr. Muthu Kumaran</span> & <span class="bg_style">Ms. Ruby</span> with a vision to empower students through knowledge, discipline, and life skills. With over 9 years of dedicated service, we have guided 500+ students to achieve academic excellence and personal growth.</p>
+                    <p>B<span class="b2b_academy_name_para">2</span>B Academy was founded by passionate educators <span class="bg_style">Mr. Muthu Kumaran</span> & <span class="bg_style">Ms. Ruby</span> with a vision to empower students through knowledge, discipline, and life skills. With over 9 years of dedicated service, we have guided 500+ students to achieve academic excellence and personal growth.</p>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-image border img-border-radius overflow-hidden">

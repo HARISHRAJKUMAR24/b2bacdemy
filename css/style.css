@@ -714,9 +714,24 @@ h6,
 
 
 .b2b_academy_name_heading {
-    font-size: 30px;
+    font-size: 30px; /* Default for desktop */
 }
 
+@media (max-width: 900px) { /* Target mobile devices */
+    .b2b_academy_name_heading {
+        font-size: 18px;
+    }
+}
+
+
+.b2b_academy_name_para{
+    font-size: 12px;
+}
+@media (max-width: 900px) {
+    .b2b_academy_name_para{
+        font-size: 11px;
+    }  
+}
 
 .b2b_academy_name_fot {
     font-size: 12px;
@@ -770,6 +785,7 @@ h6,
     transition: opacity 0.5s ease-out, transform 0.5s ease-out, cursor 0.3s ease-in-out !important;
     cursor: pointer;
 }
+
 .popup-overlay.active .popup-content {
     opacity: 1;
     transform: scale(1);

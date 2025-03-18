@@ -98,9 +98,9 @@
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">About Us</h4>
                     <h1 class="text-dark mb-4 display-5">Welcome to B<span class="b2b_academy_name_heading">2</span>B Academy Shaping Young Minds for a Brighter Future</h1>
                     <p class="text-dark mb-2">Your Child Deserves the Best Start
-                        At B2B Academy, we partner with parents to create a personalized learning experience that unlocks every child's potential. Watch your child grow with confidence, knowledge, and skills that last a lifetime.
+                        At B<span class="b2b_academy_name_para">2</span>B Academy, we partner with parents to create a personalized learning experience that unlocks every child's potential. Watch your child grow with confidence, knowledge, and skills that last a lifetime.
                     </p>
-                    <p class="text-dark mb-4">Join the B2B Academy Family Today!</p>
+                    <p class="text-dark mb-4">Join the B<span class="b2b_academy_name_para">2</span>B Academy Family Today!</p>
 
                     <a href="" class="btn btn-primary px-5 py-3 btn-border-radius">More Details</a>
                 </div>
@@ -281,7 +281,7 @@
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
                     <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Why Choose Us?</h4>
                     <h1 class="text-dark mb-4 display-5">The Right Choice for Your Child’s Success</h1>
-                    <p class="text-dark mb-4">Every parent wants the best for their child. At B2B Academy, we don’t just teach; we inspire, empower, and transform students into confident achievers. With our specialized courses, expert faculty, and proven results, your child is set for success!</p>
+                    <p class="text-dark mb-4">Every parent wants the best for their child. At B<span class="b2b_academy_name_para">2</span>B Academy, we don’t just teach; we inspire, empower, and transform students into confident achievers. With our specialized courses, expert faculty, and proven results, your child is set for success!</p>
                     <div class="row mb-4">
                         <div class="col-lg-6">
                             <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Best Hindi Coaching</h6>
