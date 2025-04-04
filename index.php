@@ -67,9 +67,9 @@
             <div class="row g-5">
                 <div class="col-lg-7 col-md-12">
                     <h2 class="mb-3 text-primary heads">The Right Education, The Right Values </h2>
-                    <h1 class="mb-5 display-1 text-white"> The Academy That Transforms Futures</h1>
+                    <h1 class="mb-5 display-1 text-white"> The Academy That Transforms Future</h1>
                     <a href="" class="btn btn-primary px-4 py-3 px-md-5  me-4 btn-border-radius">Get Started</a>
-                    <a href="./sfdb/index.php" class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius">Go To Dashboard</a>
+                    <a href="./sfdb/sfdashboard.php" class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius">Go To Dashboard</a>
                 </div>
             </div>
         </div>
