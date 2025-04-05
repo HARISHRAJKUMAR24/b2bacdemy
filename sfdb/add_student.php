@@ -96,6 +96,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .catch(error => console.error("Error:", error));
     }
   </script>
+  <style>
+    #ad_btn{
+      margin-bottom: 50px !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -213,7 +218,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
             </div>
 
-            <div class="text-center mt-4">
+            <div class="text-center mt-4" id="ad_btn">
               <button type="submit" class="btn btn-primary px-5">Submit</button>
             </div>
           </form>
