@@ -97,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   </script>
   <style>
-    #ad_btn{
+    #ad_btn {
       margin-bottom: 50px !important;
     }
   </style>
@@ -145,7 +145,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div class="container mt-5">
           <form id="admissionForm" onsubmit="submitForm(event)">
-            <div class="row g-3">
+            <!-- Row 1 -->
+            <div class="row g-4">
               <div class="col-md-6">
                 <label for="studentName" class="form-label">Student's Name</label>
                 <input type="text" class="form-control" id="studentName" name="studentName" required>
@@ -156,7 +157,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
             </div>
 
-            <div class="row g-3 mt-1">
+            <!-- Row 2 -->
+            <div class="row g-4 mt-1">
               <div class="col-md-6">
                 <label for="bloodGroup" class="form-label">Blood Group</label>
                 <select class="form-select" id="bloodGroup" name="bloodGroup" required>
@@ -177,7 +179,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
             </div>
 
-            <div class="row g-3 mt-3">
+            <!-- Row 3 -->
+            <div class="row g-4 mt-1">
               <div class="col-md-6">
                 <label for="fatherName" class="form-label">Father's Name</label>
                 <input type="text" class="form-control" id="fatherName" name="fatherName" required>
@@ -188,7 +191,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
             </div>
 
-            <div class="row g-3 mt-3">
+            <!-- Row 4 -->
+            <div class="row g-4 mt-1">
+              <div class="col-md-6">
+                <label for="fatherOccupation" class="form-label">Father's Occupation</label>
+                <input type="text" class="form-control" id="fatherOccupation" name="fatherOccupation" required>
+              </div>
+              <div class="col-md-6">
+                <label for="motherOccupation" class="form-label">Mother's Occupation</label>
+                <input type="text" class="form-control" id="motherOccupation" name="motherOccupation" required>
+              </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="row g-4 mt-1">
+              <div class="col-md-6">
+                <label for="contactNumber" class="form-label">Contact Number</label>
+                <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+              </div>
+              <div class="col-md-6">
+                <label for="alternateContact" class="form-label">Alternate Contact Number (Optional)</label>
+                <input type="tel" class="form-control" id="alternateContact" name="alternateContact">
+              </div>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="row g-4 mt-1">
+              <div class="col-md-6">
+                <label for="referrer" class="form-label">Who Referred This Academy?</label>
+                <input type="text" class="form-control" id="referrer" name="referrer" required>
+              </div>
               <div class="col-md-6">
                 <label for="boardStudy" class="form-label">Board of Study</label>
                 <select class="form-select" id="boardStudy" name="boardStudy" required>
@@ -199,13 +231,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <option>Other</option>
                 </select>
               </div>
-              <div class="col-md-6">
-                <label for="residentialAddress" class="form-label">Residential Address</label>
-                <textarea class="form-control" id="residentialAddress" name="residentialAddress" rows="3" required></textarea>
-              </div>
             </div>
 
-            <div class="row g-3 mt-3">
+            <!-- Row 7 -->
+            <div class="row g-4 mt-1">
               <div class="col-md-6">
                 <label for="courseDetails" class="form-label">Select Course</label>
                 <select class="form-select" id="courseDetails" name="courseDetails" required>
@@ -218,11 +247,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
             </div>
 
+            <!-- Row 8 -->
+            <div class="row g-4 mt-1">
+              <div class="col-md-12">
+                <label for="residentialAddress" class="form-label">Residential Address</label>
+                <textarea class="form-control" id="residentialAddress" name="residentialAddress" rows="3" required></textarea>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
             <div class="text-center mt-4" id="ad_btn">
               <button type="submit" class="btn btn-primary px-5">Submit</button>
             </div>
           </form>
         </div>
+
+
 
       </main>
     </div>
