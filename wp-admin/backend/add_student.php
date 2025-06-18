@@ -49,11 +49,10 @@ try {
         $photoPath = $newFileName;
     }
 
-   
-    $yearSuffix = date('y'); 
+    // Generate roll number
+    $yearSuffix = date('y');
     $prefix = "B2B{$yearSuffix}SID";
 
-    
     $query = "SELECT rollNo FROM students WHERE rollNo LIKE :prefix ORDER BY rollNo DESC LIMIT 1";
     $stmt = $conn->prepare($query);
     $likePrefix = $prefix . "%";
@@ -69,7 +68,7 @@ try {
 
     $rollNo = $prefix . str_pad($nextNumber, 2, '0', STR_PAD_LEFT);
 
-    // Insert student data with roll number
+    // Insert student
     $sql = "INSERT INTO students (studentName, stdStudying, course, contactNumber, studentPhoto, rollNo)
             VALUES (:studentName, :stdStudying, :course, :contactNumber, :studentPhoto, :rollNo)";
     $stmt = $conn->prepare($sql);
@@ -84,7 +83,17 @@ try {
     ]);
 
     if ($success) {
-        respond(["status" => "success", "message" => "Admission Form Submitted Successfully!", "rollNo" => $rollNo], 201);
+        //  Increment enroll count in course
+        $courseId = $_POST['course'];
+        $updateEnroll = $conn->prepare("UPDATE courses SET enroll = enroll + 1 WHERE id = :courseId");
+        $updateEnroll->bindParam(':courseId', $courseId, PDO::PARAM_INT);
+        $updateEnroll->execute();
+
+        respond([
+            "status" => "success",
+            "message" => "Admission Form Submitted Successfully!",
+            "rollNo" => $rollNo
+        ], 201);
     } else {
         respond(["status" => "error", "message" => "Failed to insert into database."], 500);
     }

@@ -9,7 +9,7 @@ if (isset($_GET['rollno'])) {
 
     $rollno = $_GET['rollno'];
 
-    $student_query = "SELECT id, studentPhoto, rollNo, studentName, dob, bloodGroup, age, course, fatherName, motherName, fatherOccupation, motherOccupation, contactNumber, alternateContact, stdStudying, boardStudy, camp, joiningDate, referrer, residentialAddress, created_at FROM students WHERE rollNo = :rollno";
+    $student_query = "SELECT id, studentPhoto, rollNo, studentName, dob, bloodGroup, age, course, fatherName, motherName, fatherOccupation, motherOccupation, contactNumber, alternateContact, stdStudying, boardStudy, camp, joiningDate, referrer, residentialAddress,status, created_at FROM students WHERE rollNo = :rollno";
 
     $stmt = $conn->prepare($student_query);
     $stmt->bindParam(':rollno', $rollno, PDO::PARAM_STR);
@@ -18,11 +18,10 @@ if (isset($_GET['rollno'])) {
     $student_info = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($student_info) {
-        $student=$student_info;
+        $student = $student_info;
     } else {
         echo "<script>alert('Student not found'); window.location.href='./';</script>";
     }
-
 } else {
     echo "<script>alert('No roll number provided'); window.location.href='./';</script>";
 }
@@ -53,11 +52,11 @@ if (isset($_GET['rollno'])) {
 
     <link href="./css/dashboard.css" rel="stylesheet">
 
-   
+
     <style>
-    #ad_btn {
-        margin-bottom: 50px !important;
-    }
+        #ad_btn {
+            margin-bottom: 50px !important;
+        }
     </style>
 </head>
 
@@ -104,18 +103,20 @@ if (isset($_GET['rollno'])) {
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Admission Form</h1>
+                    <button class="btn btn-outline-info"><?= safe_htmlspecialchars($student['rollNo']) ?></button>
+
                 </div>
 
                 <div class="container mt-5">
-                    <form id="admissionForm" >
+                    <form id="admissionForm">
                         <!-- Row 1 -->
                         <div class="row g-4 mb-5">
                             <div class="col-md-12 text-center ">
                                 <div>
-<img src="./assets/img/students/<?= safe_htmlspecialchars($student['studentPhoto']) ?>" alt="" style="width:250px;height:250px;" clas="rounded">
+                                    <img src="./assets/img/students/<?= safe_htmlspecialchars($student['studentPhoto']) ?>" alt="" style="width:250px;height:250px;" clas="rounded">
 
                                 </div>
-                               
+
                             </div>
                         </div>
 
@@ -134,12 +135,12 @@ if (isset($_GET['rollno'])) {
                         <div class="row g-4 mt-1">
                             <div class="col-md-6">
                                 <label for="bloodGroup" class="form-label">Blood Group</label>
-                                <input class="form-control" id="bloodGroup" name="bloodGroup" type="text" value="<?= safe_htmlspecialchars($student['bloodgroup']) ?>"  required>
-                                   
+                                <input class="form-control" id="bloodGroup" name="bloodGroup" type="text" value="<?= safe_htmlspecialchars($student['bloodgroup']) ?>" required>
+
                             </div>
                             <div class="col-md-6">
                                 <label for="age" class="form-label">Age</label>
-                                <input type="text" class="form-control" id="age" name="age" required value="<?= safe_htmlspecialchars($student['age']) ?>" >
+                                <input type="text" class="form-control" id="age" name="age" required value="<?= safe_htmlspecialchars($student['age']) ?>">
                             </div>
 
                         </div>
@@ -193,34 +194,34 @@ if (isset($_GET['rollno'])) {
                             <div class="col-md-6">
                                 <label for="boardStudy" class="form-label">Board of Study</label>
                                 <input class="form-control" id="boardStudy" name="boardStudy" required value="<?= safe_htmlspecialchars($student['boardStudy']) ?>" type="text">
-                                   
+
                             </div>
                         </div>
                         <!-- Row 6 -->
                         <div class="row g-4 mt-1">
 
                             <div class="col-md-6">
-                                  <?php
-    $course_name_smt = $conn->prepare("SELECT courseName FROM courses WHERE id = :id");
-    $course_name_smt->bindParam(':id', $student['course'], PDO::PARAM_INT);
-    $course_name_smt->execute();
+                                <?php
+                                $course_name_smt = $conn->prepare("SELECT courseName FROM courses WHERE id = :id");
+                                $course_name_smt->bindParam(':id', $student['course'], PDO::PARAM_INT);
+                                $course_name_smt->execute();
 
-    $course_name = $course_name_smt->fetch(PDO::FETCH_ASSOC);
+                                $course_name = $course_name_smt->fetch(PDO::FETCH_ASSOC);
 
-    if ($course_name !== false) {
-        $coursename=safe_htmlspecialchars($course_name['courseName']);
-    } else {
-        echo 'Course not found';
-    }
-    ?>
+                                if ($course_name !== false) {
+                                    $coursename = safe_htmlspecialchars($course_name['courseName']);
+                                } else {
+                                    echo 'Course not found';
+                                }
+                                ?>
                                 <label for="courseDetails" class="form-label">Selected Course</label>
                                 <input type="text" class="form-control" id="courseDetails" name="courseDetails" value="<?= $coursename ?>" required>
-                                    
+
                             </div>
                             <div class="col-md-6">
                                 <label for="camp" class="form-label">Camp</label>
                                 <input class="form-control" type="text" id="camp" name="camp" value="<?= safe_htmlspecialchars($student['camp']) ?>" required>
-                                    
+
                             </div>
                         </div>
 
@@ -242,13 +243,12 @@ if (isset($_GET['rollno'])) {
                             <div class="col-md-12">
                                 <label for="residentialAddress" class="form-label">Residential Address</label>
                                 <textarea class="form-control" id="residentialAddress" name="residentialAddress"
-                                    rows="3" required >
-                                <?= safe_htmlspecialchars($student['residentialAddress']) ?>
+                                    rows="3" required><?= safe_htmlspecialchars($student['residentialAddress']) ?>
                             </textarea>
                             </div>
                         </div>
 
-                        
+
                     </form>
                 </div>
 

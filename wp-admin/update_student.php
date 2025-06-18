@@ -9,7 +9,7 @@ if (isset($_GET['rollno'])) {
 
     $rollno = $_GET['rollno'];
 
-    $student_query = "SELECT id, studentPhoto, rollNo, studentName, dob, bloodGroup, age, course, fatherName, motherName, fatherOccupation, motherOccupation, contactNumber, alternateContact, stdStudying, boardStudy, camp, joiningDate, referrer, residentialAddress, created_at FROM students WHERE rollNo = :rollno";
+    $student_query = "SELECT id, studentPhoto, rollNo, studentName, dob, bloodGroup, age, course,status, fatherName, motherName, fatherOccupation, motherOccupation, contactNumber, alternateContact, stdStudying, boardStudy, camp, joiningDate, referrer, residentialAddress, created_at FROM students WHERE rollNo = :rollno";
 
     $stmt = $conn->prepare($student_query);
     $stmt->bindParam(':rollno', $rollno, PDO::PARAM_STR);
@@ -18,14 +18,16 @@ if (isset($_GET['rollno'])) {
     $student_info = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($student_info) {
-        $student=$student_info;
+        $student = $student_info;
     } else {
         echo "<script>alert('Student not found'); window.location.href='./';</script>";
     }
-
 } else {
     echo "<script>alert('No roll number provided'); window.location.href='./';</script>";
 }
+
+include("./backend/course_fetch.php");
+
 ?>
 
 
@@ -40,7 +42,7 @@ if (isset($_GET['rollno'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="generator" content="Hugo 0.122.0">
-    <title><?= safe_htmlspecialchars($student['studentName']) ?>  Updated | B2BAcademy</title>
+    <title><?= safe_htmlspecialchars($student['studentName']) ?> Updated | B2BAcademy</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -53,7 +55,7 @@ if (isset($_GET['rollno'])) {
 
     <link href="./css/dashboard.css" rel="stylesheet">
 
-
+<!-- for the data update -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const form = document.getElementById("admissionForm");
@@ -68,7 +70,7 @@ if (isset($_GET['rollno'])) {
                 const originalText = submitButton.textContent;
                 submitButton.textContent = "Submitting...";
 
-                fetch("./backend/add_student.php", {
+                fetch("./backend/update_student.php?rollno=<?= safe_htmlspecialchars($student['rollNo']) ?> ", {
                         method: "POST",
                         body: formData
                     })
@@ -77,7 +79,7 @@ if (isset($_GET['rollno'])) {
                         return response.json();
                     })
                     .then(data => {
-                        alert(data.message || "Form submitted successfully.");
+                        alert(data.message || "form updated successfully.");
                         if (data.message && data.message.includes("Successfully")) {
                             form.reset();
                             window.location.reload();
@@ -94,11 +96,93 @@ if (isset($_GET['rollno'])) {
             });
         });
     </script>
-   
+<!-- for image update -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById("admissionForm_img");
+            const submitButton = form.querySelector("button[type='submit']");
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+
+                submitButton.disabled = true;
+                const originalText = submitButton.textContent;
+                submitButton.textContent = "Submitting...";
+
+                fetch("./backend/student_img_update.php ", {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => {
+                        if (!response.ok) throw new Error("Server responded with an error.");
+                        return response.json();
+                    })
+                    .then(data => {
+                        alert(data.message || "Image updated successfully.");
+                        if (data.message && data.message.includes("Successfully")) {
+                            form.reset();
+                            window.location.reload();
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                        alert("Submission failed. Please try again.");
+                    })
+                    .finally(() => {
+                        submitButton.disabled = false;
+                        submitButton.textContent = originalText;
+                    });
+            });
+        });
+    </script>
+    <!-- status update -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById("student_status");
+            const submitButton = form.querySelector("button[type='submit']");
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+
+                submitButton.disabled = true;
+                const originalText = submitButton.textContent;
+                submitButton.textContent = "Submitting...";
+
+                fetch("./backend/status_update.php", {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => {
+                        if (!response.ok) throw new Error("Server responded with an error.");
+                        return response.json();
+                    })
+                    .then(data => {
+                        alert(data.message || "status updated successfully.");
+                         window.location.reload();
+                        if (data.message && data.message.includes("Successfully")) {
+                            form.reset();
+                           
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                        alert("Submission failed. Please try again.");
+                    })
+                    .finally(() => {
+                        submitButton.disabled = false;
+                        submitButton.textContent = originalText;
+                    });
+            });
+        });
+    </script>
     <style>
-    #ad_btn {
-        margin-bottom: 50px !important;
-    }
+        #ad_btn {
+            margin-bottom: 50px !important;
+        }
     </style>
 </head>
 
@@ -145,20 +229,46 @@ if (isset($_GET['rollno'])) {
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Admission Form</h1>
+                   <div class="d-flex gap-4">
+                    <button class="btn btn-outline-info"><?= safe_htmlspecialchars($student['rollNo']) ?></button>
+
+            <form id="student_status" onsubmit="submitForm(event)" >
+                 <input type="hidden" name="rollno" value="<?= $student['rollNo'] ?>">
+                 <input type="hidden" name="status" id="studentstatus" value="<?= 
+                     
+                      (safe_htmlspecialchars($student['status'])==0)?'1':'0'
+                     
+                     ?>">
+                     <button class="btn btn-outline-info" type="submit"><?= 
+                     
+                      (safe_htmlspecialchars($student['status'])==0)?'activate':'deactive'
+                     
+                     ?></button> 
+                     </form> 
+                   </div>
                 </div>
 
                 <div class="container mt-5">
-                    <form id="admissionForm"  onsubmit="submitForm(event)" enctype="multipart/form-data">
-                        <!-- Row 1 -->
-                        <div class="row g-4 mb-5">
-                            <div class="col-md-12 text-center ">
-                                <div>
-<img src="./assets/img/students/<?= safe_htmlspecialchars($student['studentPhoto']) ?>" alt="" style="width:250px;height:250px;" clas="rounded">
+                    <!-- Row 1 -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-12 text-center ">
+                            <div>
+                                <form id="admissionForm_img" onsubmit="submitForm(event)" enctype="multipart/form-data">
 
-                                </div>
-                               
+                                    <img src="./assets/img/students/<?= safe_htmlspecialchars($student['studentPhoto']) ?>" alt="" style="width:250px;height:250px;" class="mb-2 rounded">
+                                    <input type="file" class="form-control" id="studentPhoto" name="studentPhoto" required accept="image/*">
+  <input type="hidden" name="rollno" value="<?= $student['rollNo'] ?>">
+                                    <div class="text-center mt-4" id="ad_btn">
+                                        <button type="submit" class="btn btn-primary px-5">Submit</button>
+                                    </div>
+                                </form>
                             </div>
+
                         </div>
+                    </div>
+
+
+                    <form id="admissionForm" onsubmit="submitForm(event)" enctype="multipart/form-data">
 
                         <div class="row g-4">
                             <div class="col-md-6">
@@ -167,7 +277,12 @@ if (isset($_GET['rollno'])) {
                             </div>
                             <div class="col-md-6">
                                 <label for="dob" class="form-label">Date of Birth</label>
-                                <input type="text" class="form-control" id="dob" name="dob" value="<?= safe_htmlspecialchars($student['dob']) ?>" required>
+                                <input type="date"
+                                    class="form-control"
+                                    id="dob"
+                                    name="dob"
+                                    value="<?= isset($student['dob']) ? date('Y-m-d', strtotime($student['dob'])) : '' ?>"
+                                    required>
                             </div>
                         </div>
 
@@ -175,12 +290,23 @@ if (isset($_GET['rollno'])) {
                         <div class="row g-4 mt-1">
                             <div class="col-md-6">
                                 <label for="bloodGroup" class="form-label">Blood Group</label>
-                                <input class="form-control" id="bloodGroup" name="bloodGroup" type="text" value="<?= safe_htmlspecialchars($student['bloodgroup']) ?>"  required>
-                                   
+                                <select class="form-select" id="bloodGroup" name="bloodGroup" required>
+                                    <option disabled <?= empty($student['bloodGroup']) ? 'selected' : '' ?>>Select...</option>
+                                    <option value="A+" <?= ($student['bloodGroup'] === 'A+') ? 'selected' : '' ?>>A+</option>
+                                    <option value="A-" <?= ($student['bloodGroup'] === 'A-') ? 'selected' : '' ?>>A-</option>
+                                    <option value="B+" <?= ($student['bloodGroup'] === 'B+') ? 'selected' : '' ?>>B+</option>
+                                    <option value="B-" <?= ($student['bloodGroup'] === 'B-') ? 'selected' : '' ?>>B-</option>
+                                    <option value="O+" <?= ($student['bloodGroup'] === 'O+') ? 'selected' : '' ?>>O+</option>
+                                    <option value="O-" <?= ($student['bloodGroup'] === 'O-') ? 'selected' : '' ?>>O-</option>
+                                    <option value="AB+" <?= ($student['bloodGroup'] === 'AB+') ? 'selected' : '' ?>>AB+</option>
+                                    <option value="AB-" <?= ($student['bloodGroup'] === 'AB-') ? 'selected' : '' ?>>AB-</option>
+                                </select>
+
+
                             </div>
                             <div class="col-md-6">
                                 <label for="age" class="form-label">Age</label>
-                                <input type="text" class="form-control" id="age" name="age" required value="<?= safe_htmlspecialchars($student['age']) ?>" >
+                                <input type="text" class="form-control" id="age" name="age" required value="<?= safe_htmlspecialchars($student['age']) ?>">
                             </div>
 
                         </div>
@@ -234,34 +360,47 @@ if (isset($_GET['rollno'])) {
                             <div class="col-md-6">
                                 <label for="boardStudy" class="form-label">Board of Study</label>
                                 <input class="form-control" id="boardStudy" name="boardStudy" required value="<?= safe_htmlspecialchars($student['boardStudy']) ?>" type="text">
-                                   
+
                             </div>
                         </div>
                         <!-- Row 6 -->
                         <div class="row g-4 mt-1">
 
                             <div class="col-md-6">
-                                  <?php
-    $course_name_smt = $conn->prepare("SELECT courseName FROM courses WHERE id = :id");
-    $course_name_smt->bindParam(':id', $student['course'], PDO::PARAM_INT);
-    $course_name_smt->execute();
+                                <?php
+                                $course_name_smt = $conn->prepare("SELECT courseName FROM courses WHERE id = :id");
+                                $course_name_smt->bindParam(':id', $student['course'], PDO::PARAM_INT);
+                                $course_name_smt->execute();
 
-    $course_name = $course_name_smt->fetch(PDO::FETCH_ASSOC);
+                                $course_name = $course_name_smt->fetch(PDO::FETCH_ASSOC);
 
-    if ($course_name !== false) {
-        $coursename=safe_htmlspecialchars($course_name['courseName']);
-    } else {
-        echo 'Course not found';
-    }
-    ?>
+                                if ($course_name !== false) {
+                                    $coursename = safe_htmlspecialchars($course_name['courseName']);
+                                } else {
+                                    echo 'Course not found';
+                                }
+                                ?>
                                 <label for="courseDetails" class="form-label">Selected Course</label>
-                                <input type="text" class="form-control" id="courseDetails" name="courseDetails" value="<?= $coursename ?>" required>
-                                    
+                                <select class="form-select mb-4" id="course" name="course" required>
+                                    <option value="" disabled <?= empty($student['course']) ? 'selected' : '' ?>>Select...</option>
+                                    <?php foreach ($courses as $course): ?>
+                                        <option value="<?= $course['id'] ?>" <?= ($student['course'] == $course['id']) ? 'selected' : '' ?>>
+                                            <?= safe_htmlspecialchars($course['courseName']) ?>
+                                        </option>
+                                    <?php endforeach; ?>
+                                </select>
+
+
                             </div>
                             <div class="col-md-6">
                                 <label for="camp" class="form-label">Camp</label>
-                                <input class="form-control" type="text" id="camp" name="camp" value="<?= safe_htmlspecialchars($student['camp']) ?>" required>
-                                    
+                                <select class="form-select mb-4" id="camp" name="camp" required>
+                                    <option disabled <?= empty($student['camp']) ? 'selected' : '' ?>>Select...</option>
+                                    <option value="summer" <?= ($student['camp'] === 'summer') ? 'selected' : '' ?>>Summer</option>
+                                    <option value="winter" <?= ($student['camp'] === 'winter') ? 'selected' : '' ?>>Winter</option>
+                                    <option value="reqular" <?= ($student['camp'] === 'reqular') ? 'selected' : '' ?>>Reqular</option>
+                                </select>
+
                             </div>
                         </div>
 
@@ -269,7 +408,12 @@ if (isset($_GET['rollno'])) {
                         <div class="row g-4 mt-1">
                             <div class="col-md-6">
                                 <label for="joiningDate" class="form-label">Date of Joining</label>
-                                <input type="text" class="form-control" id="joiningDate" name="joiningDate" value="<?= safe_htmlspecialchars($student['joiningDate']) ?>" required>
+                                <input type="date"
+                                    class="form-control"
+                                    id="joiningDate"
+                                    name="joiningDate"
+                                    value="<?= isset($student['joiningDate']) ? date('Y-m-d', strtotime($student['joiningDate'])) : '' ?>"
+                                    required>
                             </div>
 
                             <div class="col-md-6">
@@ -283,13 +427,15 @@ if (isset($_GET['rollno'])) {
                             <div class="col-md-12">
                                 <label for="residentialAddress" class="form-label">Residential Address</label>
                                 <textarea class="form-control" id="residentialAddress" name="residentialAddress"
-                                    rows="3" required >
-                                <?= safe_htmlspecialchars($student['residentialAddress']) ?>
+                                    rows="3" required><?= safe_htmlspecialchars($student['residentialAddress']) ?>
                             </textarea>
                             </div>
                         </div>
+                        <!-- Submit Button -->
+                        <div class="text-center mt-4" id="ad_btn">
+                            <button type="submit" class="btn btn-primary px-5">Submit</button>
+                        </div>
 
-                        
                     </form>
                 </div>
 
