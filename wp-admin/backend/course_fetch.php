@@ -1,4 +1,6 @@
 <?php
+
+
 try { 
     $course_name = "SELECT id, courseName FROM courses";
     $course_stmt = $conn->prepare($course_name);

@@ -2,7 +2,7 @@
 
 include('./resource/conn.php');
 $database = new Database();
-$conn = $database->getConnection();
+$conn = $database->getConnection(); 
 include("./backend/student_list.php");
 
 include("./backend/course_fetch.php");
@@ -132,7 +132,7 @@ include("./backend/course_fetch.php");
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form id="admissionForm" enctype="multipart/form-data" method="POST">
+                                <form id="admissionForm" enctype="multipart/form-data">
                                     <!-- Row 1 -->
                                     <div class="row g-4">
                                         <div class="col-md-6">
@@ -154,7 +154,7 @@ include("./backend/course_fetch.php");
                                             <select class="form-select" id="course" name="course" required>
                                                 <option disabled selected>Select...</option>
                                                 <?php foreach ($courses as $course): ?>
-                                                    <option value="<?= $course['id']     ?>"><?= safe_htmlspecialchars($course['courseName']) ?></option>
+                                                    <option value="<?= $course['id'] ?>"><?= safe_htmlspecialchars($course['courseName']) ?></option>
                                                 <?php endforeach; ?>
                                             </select>
                                         </div>

@@ -9,7 +9,7 @@ if (isset($_GET['rollno'])) {
 
     $rollno = $_GET['rollno'];
 
-    $student_query = "SELECT id, studentPhoto, rollNo, studentName, dob, bloodGroup, age, course,status, fatherName, motherName, fatherOccupation, motherOccupation, contactNumber, alternateContact, stdStudying, boardStudy, camp, joiningDate, referrer, residentialAddress, created_at FROM students WHERE rollNo = :rollno";
+    $student_query = "SELECT id, studentPhoto, rollNo, studentName, dob, bloodGroup, age, course,status, fatherName, motherName, fatherOccupation, motherOccupation, contactNumber, alternateContact, stdStudying, boardStudy, camp, joiningDate, referrer, residentialAddress FROM students WHERE rollNo = :rollno";
 
     $stmt = $conn->prepare($student_query);
     $stmt->bindParam(':rollno', $rollno, PDO::PARAM_STR);
@@ -42,7 +42,7 @@ include("./backend/course_fetch.php");
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="generator" content="Hugo 0.122.0">
-    <title><?= safe_htmlspecialchars($student['studentName']) ?> Updated | B2BAcademy</title>
+    <title><?= safe_htmlspecialchars($student['studentName']) ?> Edit | B2BAcademy</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -306,7 +306,7 @@ include("./backend/course_fetch.php");
                             </div>
                             <div class="col-md-6">
                                 <label for="age" class="form-label">Age</label>
-                                <input type="text" class="form-control" id="age" name="age" required value="<?= safe_htmlspecialchars($student['age']) ?>">
+                                <input type="number" class="form-control" id="age" name="age" required value="<?= safe_htmlspecialchars($student['age']) ?>">
                             </div>
 
                         </div>
@@ -427,8 +427,7 @@ include("./backend/course_fetch.php");
                             <div class="col-md-12">
                                 <label for="residentialAddress" class="form-label">Residential Address</label>
                                 <textarea class="form-control" id="residentialAddress" name="residentialAddress"
-                                    rows="3" required><?= safe_htmlspecialchars($student['residentialAddress']) ?>
-                            </textarea>
+                                    rows="3" required><?= safe_htmlspecialchars($student['residentialAddress']) ?></textarea>
                             </div>
                         </div>
                         <!-- Submit Button -->

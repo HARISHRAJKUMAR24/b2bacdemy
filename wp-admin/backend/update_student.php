@@ -9,7 +9,8 @@ require_once('../resource/conn.php');
 $database = new Database();
 $conn = $database->getConnection();
 
-function respond($data, $code = 200) {
+function respond($data, $code = 200)
+{
     http_response_code($code);
     echo json_encode($data);
     exit;
@@ -27,25 +28,24 @@ try {
     $rollno = $_GET['rollno'];
 
     $sql = "UPDATE students SET 
-        studentName = :studentName,
-        dob = :dob,
-        bloodGroup = :bloodGroup,
-        age = :age,
-        course = :course,
-        fatherName = :fatherName,
-        motherName = :motherName,
-        fatherOccupation = :fatherOccupation,
-        motherOccupation = :motherOccupation,
-        contactNumber = :contactNumber,
-        alternateContact = :alternateContact,
-        stdStudying = :stdStudying,
-        boardStudy = :boardStudy,
-        camp = :camp,
-        joiningDate = :joiningDate,
-        referrer = :referrer,
-        residentialAddress = :residentialAddress,
-        created_at = :created_at
-        WHERE rollNo = :rollno";
+    studentName = :studentName,
+    dob = :dob,
+    bloodGroup = :bloodGroup,
+    age = :age,
+    course = :course,
+    fatherName = :fatherName,
+    motherName = :motherName,
+    fatherOccupation = :fatherOccupation,
+    motherOccupation = :motherOccupation,
+    contactNumber = :contactNumber,
+    alternateContact = :alternateContact,
+    stdStudying = :stdStudying,
+    boardStudy = :boardStudy,
+    camp = :camp,
+    joiningDate = :joiningDate,
+    referrer = :referrer,
+    residentialAddress = :residentialAddress
+    WHERE rollNo = :rollno";
 
     $stmt = $conn->prepare($sql);
 
@@ -67,14 +67,12 @@ try {
         ':joiningDate' => $_POST['joiningDate'] ?? '',
         ':referrer' => $_POST['referrer'] ?? '',
         ':residentialAddress' => $_POST['residentialAddress'] ?? '',
-        ':created_at' => $_POST['created_at'] ?? date('Y-m-d H:i:s'),
         ':rollno' => $rollno
     ];
 
     $stmt->execute($params);
 
     respond(["status" => "success", "message" => "Student record updated successfully."]);
-
 } catch (PDOException $e) {
     respond(["status" => "error", "message" => "Database error: " . $e->getMessage()], 500);
 } catch (Exception $e) {

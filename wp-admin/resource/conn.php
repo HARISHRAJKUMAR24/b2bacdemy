@@ -5,8 +5,8 @@
 class Database {
     private $host = "localhost"; 
     private $db_name = "b2bacademy"; 
-    private $username = "root";   
-    private $password = "mark";       
+    private $username = "mark";   
+    private $password = "";       
     public $conn;
 
     // Get database connection
