@@ -69,7 +69,7 @@ try {
     $rollNo = $prefix . str_pad($nextNumber, 3, '0', STR_PAD_LEFT);
 
 
-    
+
     // Insert student
     $sql = "INSERT INTO students (studentName, stdStudying, course, contactNumber, studentPhoto, rollNo)
             VALUES (:studentName, :stdStudying, :course, :contactNumber, :studentPhoto, :rollNo)";
@@ -87,7 +87,7 @@ try {
     if ($success) {
         //  Increment enroll count in course
         $courseId = $_POST['course'];
-        $updateEnroll = $conn->prepare("UPDATE courses SET enroll = enroll + 1 WHERE id = :courseId");
+        $updateEnroll = $conn->prepare("UPDATE courses SET enroll = enroll + 1,active= active+1 WHERE id = :courseId");
         $updateEnroll->bindParam(':courseId', $courseId, PDO::PARAM_INT);
         $updateEnroll->execute();
 

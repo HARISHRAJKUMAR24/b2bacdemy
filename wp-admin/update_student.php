@@ -234,6 +234,8 @@ include("./backend/course_fetch.php");
 
             <form id="student_status" onsubmit="submitForm(event)" >
                  <input type="hidden" name="rollno" value="<?= $student['rollNo'] ?>">
+                 <input type="hidden" name="course" value="<?= $student['course'] ?>">
+                 
                  <input type="hidden" name="status" id="studentstatus" value="<?= 
                      
                       (safe_htmlspecialchars($student['status'])==0)?'1':'0'
@@ -241,7 +243,7 @@ include("./backend/course_fetch.php");
                      ?>">
                      <button class="btn btn-outline-info" type="submit"><?= 
                      
-                      (safe_htmlspecialchars($student['status'])==0)?'activate':'deactive'
+                      (safe_htmlspecialchars($student['status'])==0)?'activate':'deactivate'
                      
                      ?></button> 
                      </form> 
